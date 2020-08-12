@@ -5,13 +5,13 @@ This repo contains a couple of Postman collections of the Cisco ACI Multi-Site O
 You can use the below links to import them directly into your Postman environment.
 
 ## MSO Schema Service API
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/b6e445486649967c8732)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b6e445486649967c8732)
 
 Allows you to create, update, patch, or delete schemas, as well as query for information associated with a schema.
 
 ## MSO Site Service API
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/97d4d433efb66bb41114)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/97d4d433efb66bb41114)
  
 Allows you to create, update, patch or delete a Site on MSC. (in progress)
 
