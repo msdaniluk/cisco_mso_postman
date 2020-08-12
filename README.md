@@ -1,6 +1,6 @@
-# Cisco MSO API Collection
+# Cisco ACI MSO API Collection
 
-This repo contains a couple of Postman collections of the Cisco Multi-Site Orchestrator APIs
+This repo contains a couple of Postman collections of the Cisco ACI Multi-Site Orchestrator APIs
 
 You can use the below links to import them directly into your Postman environment.
 
@@ -13,7 +13,7 @@ Allows you to create, update, patch, or delete schemas, as well as query for inf
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/97d4d433efb66bb41114)
  
-Allows you to create, update, patch or delete a Site on MSC. 
+Allows you to create, update, patch or delete a Site on MSC. (in progress)
 
 
 # Configuration
