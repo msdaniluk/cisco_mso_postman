@@ -1,0 +1,1671 @@
+{
+	"info": {
+		"_postman_id": "e10030c2-b6bd-4156-8315-bdd9cfd6b4c8",
+		"name": "MSO Schema Service API",
+		"description": "Allows you to create, update, patch, or delete schemas, as well as query for information associated with a schema.\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tenant APIs",
+			"item": [
+				{
+					"name": "GET Tenants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenants allowed sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/allowed-sites",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"allowed-sites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenants allowed users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/allowed-users",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"allowed-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenants allowed user domains",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/allowed-users/domains",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"allowed-users",
+								"domains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenants audit records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/audit-records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"audit-records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenants Audit Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/audit-records/records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"audit-records",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET AWS cAPIC with Master Cloud Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/master-org-account-sites",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"master-org-account-sites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Connected Schemas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/schemas",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"schemas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenant id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/{{id}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenant id audit records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/audit-records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"{{id}}",
+								"audit-records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenant id audit users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/audit-records/users",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"{{id}}",
+								"audit-records",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenant id infra",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/infra",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"{{id}}",
+								"infra"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenant id connected Schemas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/schemas",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"{{id}}",
+								"schemas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenant's Cloud Account from cAPIC",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/tenants/{{tenantName}}/site/{{siteId}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"{{tenantName}}",
+								"site",
+								"{{siteId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Schema APIs",
+			"item": [
+				{
+					"name": "GET Schemas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas allowed sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/allowed-sites",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"allowed-sites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas allowed tenants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/allowed-tenants",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"allowed-tenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas audit-records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/audit-records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"audit-records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas audit users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/audit-records/users",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"audit-records",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas health",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/health",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas health summary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/health-summary",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"health-summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas heatmap policy search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/heatmap-search-policies/{{query}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"heatmap-search-policies",
+								"{{query}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/list-identity",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"list-identity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas policy-names",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/search-policy",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"search-policy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas service graphs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/service-graphs",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"service-graphs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Service node types",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/service-node-types",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"service-node-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/sites",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"sites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas sync external subnets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/syncExtSubnets",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"syncExtSubnets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schemas associated tenants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/tenants",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"tenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Schema ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"id\": \"5ef063533100007a6ee4787c\",\r\n            \"displayName\": \"Site1-Only\",\r\n            \"templates\": [\r\n                {\r\n                    \"name\": \"Template1\",\r\n                    \"displayName\": \"Template 1\",\r\n                    \"tenantId\": \"5ef062ac3100004c6ee4787a\",\r\n                    \"anps\": [\r\n                        {\r\n                            \"name\": \"UntitledAP1\",\r\n                            \"displayName\": \"Untitled AP 1\",\r\n                            \"anpRef\": \"/schemas/5ef063533100007a6ee4787c/templates/Template1/anps/UntitledAP1\",\r\n                            \"epgs\": [\r\n                                {\r\n                                    \"name\": \"test\",\r\n                                    \"displayName\": \"test\",\r\n                                    \"epgRef\": \"/schemas/5ef063533100007a6ee4787c/templates/Template1/anps/UntitledAP1/epgs/test\",\r\n                                    \"contractRelationships\": [],\r\n                                    \"subnets\": [],\r\n                                    \"uSegEpg\": false,\r\n                                    \"uSegAttrs\": [],\r\n                                    \"intraEpg\": \"unenforced\",\r\n                                    \"proxyArp\": false,\r\n                                    \"preferredGroup\": false,\r\n                                    \"bdRef\": \"/schemas/5ef063533100007a6ee4787c/templates/Template1/bds/TEst\",\r\n                                    \"vrfRef\": \"\",\r\n                                    \"selectors\": []\r\n                                }\r\n                            ]\r\n                        }\r\n                    ],\r\n                    \"vrfs\": [\r\n                        {\r\n                            \"name\": \"UntitledVRF1\",\r\n                            \"displayName\": \"Untitled VRF 1\",\r\n                            \"vrfRef\": \"/schemas/5ef063533100007a6ee4787c/templates/Template1/vrfs/UntitledVRF1\",\r\n                            \"l3MCast\": false,\r\n                            \"preferredGroup\": false,\r\n                            \"vzAnyEnabled\": false,\r\n                            \"vzAnyProviderContracts\": [],\r\n                            \"vzAnyConsumerContracts\": []\r\n                        }\r\n                    ],\r\n                    \"bds\": [\r\n                        {\r\n                            \"name\": \"TEst\",\r\n                            \"displayName\": \"TEst\",\r\n                            \"bdRef\": \"/schemas/5ef063533100007a6ee4787c/templates/Template1/bds/TEst\",\r\n                            \"l2UnknownUnicast\": \"proxy\",\r\n                            \"intersiteBumTrafficAllow\": true,\r\n                            \"optimizeWanBandwidth\": true,\r\n                            \"l2Stretch\": true,\r\n                            \"subnets\": [],\r\n                            \"vrfRef\": \"/schemas/5ef063533100007a6ee4787c/templates/Template1/vrfs/UntitledVRF1\"\r\n                        }\r\n                    ],\r\n                    \"contracts\": [],\r\n                    \"filters\": [],\r\n                    \"externalEpgs\": [],\r\n                    \"serviceGraphs\": [],\r\n                    \"intersiteL3outs\": []\r\n                }\r\n            ],\r\n            \"_updateVersion\": 70,\r\n            \"sites\": [\r\n                {\r\n                    \"siteId\": \"5ed62a2f8f01009901e84fb5\",\r\n                    \"templateName\": \"Template1\",\r\n                    \"anps\": [],\r\n                    \"vrfs\": [\r\n                        {\r\n                            \"vrfRef\": \"/schemas/5ef063533100007a6ee4787c/templates/Template1/vrfs/UntitledVRF1\",\r\n                            \"regions\": []\r\n                        }\r\n                    ],\r\n                    \"bds\": [],\r\n                    \"contracts\": [],\r\n                    \"externalEpgs\": [],\r\n                    \"serviceGraphs\": [],\r\n                    \"intersiteL3outs\": []\r\n                }\r\n            ]\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}"
+							]
+						},
+						"description": "Update a specific schema"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Schema ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID association",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/association",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"association"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID audit-records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/audit-records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"audit-records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID audit users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/audit-records/users",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"audit-records",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID faults",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/faults",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"faults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID health",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/health",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID health-faults",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/health-faults",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"health-faults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID policy-delta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/policy-delta",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"policy-delta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID policy-states",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/policy-states",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"policy-states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID references",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/references",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"references"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/status",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/sites",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"sites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID tenants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/tenants",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"tenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID warnings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/warn",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"warn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID EPGs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/templates/{{templateName}}/anps/{{anpsName}}/epgs/{{epgName}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"templates",
+								"{{templateName}}",
+								"anps",
+								"{{anpsName}}",
+								"epgs",
+								"{{epgName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID BD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/templates/{{templateName}}/bds/{{bdName}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"templates",
+								"{{templateName}}",
+								"bds",
+								"{{bdName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID extEPG",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/templates/{{templateName}}/externalEpgs/{{externalEpgName}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"templates",
+								"{{templateName}}",
+								"externalEpgs",
+								"{{externalEpgName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID verify",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/templates/{{templateName}}/verify",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"templates",
+								"{{templateName}}",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Schema ID VRF",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/schemas/{{schemaId}}/templates/{{templateName}}/vrfs/{{vrfName}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schemas",
+								"{{schemaId}}",
+								"templates",
+								"{{templateName}}",
+								"vrfs",
+								"{{vrfName}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "405674f2-5ccb-4fb4-a123-7f4fa3a546c1",
+						"exec": [
+							"var body = pm.response.json();\r",
+							"pm.environment.set(\"msoToken\", body[\"token\"]);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"{{username}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{mso}}/api/v1/auth/login",
+					"protocol": "https",
+					"host": [
+						"{{mso}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				},
+				"description": "Login to MSO and Get Token"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

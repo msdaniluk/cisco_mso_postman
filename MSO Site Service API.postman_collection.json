@@ -1,0 +1,422 @@
+{
+	"info": {
+		"_postman_id": "234e99b6-6a03-43fd-bbda-a35fd342e6c4",
+		"name": "MSO Site Service API",
+		"description": "Through Site Service you can create, update, patch or delete a Site on MSC.\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ACI Info APIs",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Endpoint APIs",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Fabric Connectivity APIs",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Site APIs",
+			"item": [
+				{
+					"name": "GET Sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites"
+							]
+						},
+						"description": "get list of all the sites"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Sites Allowed Labes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/allowed-labels",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"allowed-labels"
+							]
+						},
+						"description": "Get list of all the allowed Labels"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Sites Get all Audit records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/audit-records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"audit-records"
+							]
+						},
+						"description": "Get all Site Audit records"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Sites Get all Audit users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/audit-records/users",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"audit-records",
+								"users"
+							]
+						},
+						"description": "Get all Audit Users"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Sites Health",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/health",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"health"
+							]
+						},
+						"description": "Get all Sites Health"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Sites APIC version",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/sync-version",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"sync-version"
+							]
+						},
+						"description": "Get all Sites APIC version"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Site id Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/{{siteId}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}"
+							]
+						},
+						"description": "Get details of a specific Site"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Site id Audit records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/{{siteId}}/audit-records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"audit-records"
+							]
+						},
+						"description": "Get all audit records of a specific Site"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Site id Audit Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/{{siteId}}/audit-records/users",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"audit-records",
+								"users"
+							]
+						},
+						"description": "Get Audit users of a specific Site"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Site id labels",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}/api/v1/sites/{{siteId}}/labels",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"labels"
+							]
+						},
+						"description": "Get labels based on Site id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "502b1d5a-f3c3-4845-bf7c-504222608ad2",
+						"exec": [
+							"var body = pm.response.json();\r",
+							"pm.environment.set(\"msoToken\", body[\"token\"]);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"{{username}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{mso}}/api/v1/auth/login",
+					"protocol": "https",
+					"host": [
+						"{{mso}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				},
+				"description": "Login to MSO and Get Token "
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "52a88a9b-254d-41a0-9b3e-242e68d8ba00",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c70eec0f-8e53-4f92-9ece-2a10b697ea27",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
