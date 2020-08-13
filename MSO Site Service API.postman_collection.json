@@ -8,17 +8,1298 @@
 	"item": [
 		{
 			"name": "ACI Info APIs",
-			"item": [],
+			"item": [
+				{
+					"name": "GET list of nodes from SiteID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/aci/sites/{{siteId}}/nodes",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"aci",
+								"sites",
+								"{{siteId}}",
+								"nodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET list of node interfaces from SiteID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/aci/sites/{{siteId}}/nodes/interfaces",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"aci",
+								"sites",
+								"{{siteId}}",
+								"nodes",
+								"interfaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET list fabric pods from SiteID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/aci/sites/{{siteId}}/pods",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"aci",
+								"sites",
+								"{{siteId}}",
+								"pods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET cloud accounds from SiteID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/cloud-account",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"cloud-account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SideID regions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/cloud/{{type}}/region",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"cloud",
+								"{{type}}",
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SideID regione zones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/cloud/{{type}}/region/zones",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"cloud",
+								"{{type}}",
+								"region",
+								"zones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SideID regionId zones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/cloud/{{type}}/region/{{regionId}}/zones",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"cloud",
+								"{{type}}",
+								"region",
+								"{{regionId}}",
+								"zones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID domains",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/domains",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"domains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID eLag and Domains",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/domains/{{vmmDomName}}/enhancedLabPolicies",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"{{vmmDomName}}",
+								"enhancedLabPolicies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID security-domains",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/security-domains",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"security-domains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID list tenants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/tenants",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"tenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID cloud devices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/tenants/{{tenantName}}/cloud/devices",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"tenants",
+								"{{tenantName}}",
+								"cloud",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID cloud listener-certificates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/tenants/{{tenantName}}/cloud/listener-certificates",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"tenants",
+								"{{tenantName}}",
+								"cloud",
+								"listener-certificates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID devices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/tenants/{{tenantName}}/devices",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"tenants",
+								"{{tenantName}}",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID deviceId interfaces",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/tenants/{{tenantName}}/devices/{{deviceName}}/interfaces",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"tenants",
+								"{{tenantName}}",
+								"devices",
+								"{{deviceName}}",
+								"interfaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID L3Outs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/tenants/{{tenantName}}/l3-outs",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"tenants",
+								"{{tenantName}}",
+								"l3-outs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID redirect policies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/aci/tenants/{{tenantName}}/redirect-policies",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"aci",
+								"tenants",
+								"{{tenantName}}",
+								"redirect-policies"
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Endpoint APIs",
-			"item": [],
+			"item": [
+				{
+					"name": "GET cAPIC Fabric Connectivity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/forcedClear",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"forcedClear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Report registered cAPIC",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/report",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET cAPIC resync",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/resync",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"resync"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET site-to-site tunnels",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/sites/tunnels",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"sites",
+								"tunnels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteId info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/sites/{{siteId}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"sites",
+								"{{siteId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET subnets in cAPIC",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/subnet",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"subnet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET interfaces provided by cAPIC",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/subnet/interfaces",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"subnet",
+								"interfaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET tunnels between cAPIC sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/debug/tunnels",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"debug",
+								"tunnels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET all site info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/report",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET cloud sync tool internal version",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/cloud-tunnel/version",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"cloud-tunnel",
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET endpoints discovered on a site",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/site/{{siteId}}/endpoint",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"site",
+								"{{siteId}}",
+								"endpoint"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET list of EP tunnel sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/tunnel/sites",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"tunnel",
+								"site"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET details of EP tunnel sites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/ep/tunnel/{{tunnelId}}",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"ep",
+								"tunnel",
+								"{{tunnelId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Fabric Connectivity APIs",
-			"item": [],
+			"item": [
+				{
+					"name": "GET Fabric Connectivity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/fabric-connectivity",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"fabric-connectivity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Fabric Connectivity status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/fabric-connectivity-status",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"fabric-connectivity-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Fabric Connectivity audit records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/fabric-connectivity/audit-records",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"fabric-connectivity",
+								"audit-records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Fabric Connectivity audit users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/fabric-connectivity/audit-records/users",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"fabric-connectivity",
+								"audit-records",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID Fabric Connectivity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/fabric-connectivity",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"fabric-connectivity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID apic version",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/fabric-connectivity/apic-version",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"fabric-connectivity",
+								"apic-version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SiteID mpod info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{msoToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{mso}}//api/v1/sites/{{siteId}}/fabric-connectivity/mpod-info",
+							"protocol": "https",
+							"host": [
+								"{{mso}}"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"sites",
+								"{{siteId}}",
+								"fabric-connectivity",
+								"mpod-info"
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{

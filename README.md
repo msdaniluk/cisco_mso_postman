@@ -11,7 +11,7 @@ Allows you to create, update, patch, or delete schemas, as well as query for inf
 
 ## MSO Site Service API
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/97d4d433efb66bb41114)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/8ffe8bfe085f9f1cf6d1)
  
 Allows you to create, update, patch or delete a Site on MSC. (in progress)
 
