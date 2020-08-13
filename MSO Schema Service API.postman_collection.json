@@ -180,7 +180,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{mso}}/api/v1/tenants/audit-records/records",
+							"raw": "https://{{mso}}/api/v1/tenants/audit-records/users",
 							"protocol": "https",
 							"host": [
 								"{{mso}}"
@@ -274,7 +274,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{mso}}/api/v1/tenants/{{id}}",
+							"raw": "https://{{mso}}/api/v1/tenants/{{tenantId}}",
 							"protocol": "https",
 							"host": [
 								"{{mso}}"
@@ -283,7 +283,7 @@
 								"api",
 								"v1",
 								"tenants",
-								"{{id}}"
+								"{{tenantId}}"
 							]
 						}
 					},
@@ -305,7 +305,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/audit-records",
+							"raw": "https://{{mso}}/api/v1/tenants/{{tenantId}}/audit-records",
 							"protocol": "https",
 							"host": [
 								"{{mso}}"
@@ -314,7 +314,7 @@
 								"api",
 								"v1",
 								"tenants",
-								"{{id}}",
+								"{{tenantId}}",
 								"audit-records"
 							]
 						}
@@ -337,7 +337,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/audit-records/users",
+							"raw": "https://{{mso}}/api/v1/tenants/{{tenantId}}/audit-records/users",
 							"protocol": "https",
 							"host": [
 								"{{mso}}"
@@ -346,7 +346,7 @@
 								"api",
 								"v1",
 								"tenants",
-								"{{id}}",
+								"{{tenantId}}",
 								"audit-records",
 								"users"
 							]
@@ -370,7 +370,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/infra",
+							"raw": "https://{{mso}}/api/v1/tenants/{{tenantId}}/infra",
 							"protocol": "https",
 							"host": [
 								"{{mso}}"
@@ -379,7 +379,7 @@
 								"api",
 								"v1",
 								"tenants",
-								"{{id}}",
+								"{{tenantId}}",
 								"infra"
 							]
 						}
@@ -402,7 +402,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{mso}}/api/v1/tenants/{{id}}/schemas",
+							"raw": "https://{{mso}}/api/v1/tenants/{{tenantId}}/schemas",
 							"protocol": "https",
 							"host": [
 								"{{mso}}"
@@ -411,7 +411,7 @@
 								"api",
 								"v1",
 								"tenants",
-								"{{id}}",
+								"{{tenantId}}",
 								"schemas"
 							]
 						}
