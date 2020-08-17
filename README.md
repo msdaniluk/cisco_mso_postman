@@ -1,8 +1,16 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/msdaniluk/cisco_mso_postman)
 # Cisco ACI MSO API Collection
 
 This repo contains a couple of Postman collections of the Cisco ACI Multi-Site Orchestrator APIs
 
 You can use the below links to import them directly into your Postman environment.
+## How to import the collections into Postman
+
++ Download the Postman application for your OS [Postman Downloads](https://www.postman.com/downloads/)
++ To open the Postman application
++ Click on the file tab and then click import
++ Choose the folder method you want to import an item
++ Choose the `MSO Schema Service API.postman_collection.json` or `MSO Site Service API.postman_collection.json` files to import and press open. Postman will automatically import the item.
 
 ## MSO Schema Service API
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/aedfbf9cb1941c01e110)
